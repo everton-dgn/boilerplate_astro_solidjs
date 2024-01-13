@@ -1,0 +1,39 @@
+---
+import '@fontsource/poppins/400.css'
+import '@fontsource/poppins/500.css'
+import '@fontsource/poppins/600.css'
+import 'theme/reset.scss'
+import { MainProvider } from 'providers/mainProvider'
+
+interface Props {
+  title: string
+  description: string
+}
+
+const { title, description } = Astro.props
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="minimum-scale=1, initial-scale=1, width=device-width"
+      name="viewport"
+    />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="boilerplate, astro.js, reactjs, react" name="keywords" />
+    <meta content="© Éverton Toffanetto" name="copyright" />
+    <meta content="#fff" name="theme-color" />
+    <link href="/favicon.ico" rel="icon" type="image/ico" />
+    <link href="/favicon.ico" rel="apple-touch-icon" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <MainProvider>
+      <slot />
+    </MainProvider>
+  </body>
+</html>
