@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
 import vercel from "@astrojs/vercel/serverless";
+import solid from '@astrojs/solid-js'
 
 export default defineConfig({
-  integrations: [react()],
+  integrations: [solid()],
   output: "server",
   adapter: vercel()
 });

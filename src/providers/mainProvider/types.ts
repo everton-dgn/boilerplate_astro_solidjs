@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react'
+import type { JSX } from 'solid-js'
 
 export type MainProvidersProps = {
-  children: ReactNode
+  children: JSX.Element
 }

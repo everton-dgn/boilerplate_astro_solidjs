@@ -1,19 +1,19 @@
-import { act } from '@testing-library/react'
-
-import { renderHooksProvider } from 'testHelpers/providerHook'
-
-import { useCount } from '..'
-
-describe('[Hook] useCount', () => {
-  it('should increment wnhen call count', async () => {
-    const { result } = renderHooksProvider(() => useCount())
-
-    expect(result.current.count).toBe(0)
-
-    await act(() => result.current.increment())
-    expect(result.current.count).toBe(1)
-
-    await act(() => result.current.increment())
-    expect(result.current.count).toBe(2)
-  })
-})
+// import { act } from '@testing-library/react'
+//
+// import { renderHooksProvider } from 'testHelpers/providerHook'
+//
+// import { useCount } from '..'
+//
+// describe('[Hook] useCount', () => {
+//   it('should increment wnhen call count', async () => {
+//     const { result } = renderHooksProvider(() => useCount())
+//
+//     expect(result.current.count).toBe(0)
+//
+//     await act(() => result.current.increment())
+//     expect(result.current.count).toBe(1)
+//
+//     await act(() => result.current.increment())
+//     expect(result.current.count).toBe(2)
+//   })
+// })

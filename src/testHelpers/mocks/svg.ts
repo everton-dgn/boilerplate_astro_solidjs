@@ -1,3 +1,3 @@
-export const ReactComponent = 'div'
+export const SolidComponent = 'div'
 const svg = 'svg'
 export default svg

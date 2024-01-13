@@ -1,4 +1,4 @@
 export type UseCount = {
-  count: number
+  count: () => number
   increment: () => void
 }

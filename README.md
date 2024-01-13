@@ -1,12 +1,12 @@
 <div align="center">
 
-<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/boilerplate_astro_react?style=plastic)</a>
-![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/boilerplate_astro_react?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/boilerplate_astro_react?color=yellow&style=plastic)
+<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/boilerplate_astro_solidjs?style=plastic)</a>
+![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/boilerplate_astro_solidjs?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/boilerplate_astro_solidjs?color=yellow&style=plastic)
 
 </div>
 
-<h1 align="center">Boilerplate Complete and updated with Astro.js, React, Typescript, SASS, Tests and more</h1>
+<h1 align="center">Boilerplate Complete and updated with Astro.js, Solid.js, Typescript, SASS, Tests and more</h1>
 
 <br />
 
@@ -51,7 +51,7 @@ In addition to being constantly updated, this project was configured in the smal
 
 🚀 Astro.js
 
-⚛ React
+⚛ Solidjs
 
 🔥 TypeScript
 
@@ -60,8 +60,6 @@ In addition to being constantly updated, this project was configured in the smal
 🚩 Lints: Husky, ESlint, Stylelint, Commitlint, Lint-Staged, Prettier and Typecheck
 
 ✅ Vitest
-
-🐙 React Testing Library
 
 <br />
 
@@ -96,7 +94,7 @@ In addition to being constantly updated, this project was configured in the smal
 ## Clone Repository
 
 ```bash
-git clone https://github.com/everton-dgn/boilerplate_astro_react.git
+git clone https://github.com/everton-dgn/boilerplate_astro_solidjs.git
 ```
 
 ## Install Dependencies
@@ -145,10 +143,6 @@ Available in http://localhost:6006
 
 ```bash
 yarn lint
-```
-
-```bash
-yarn next:lint
 ```
 
 ```bash

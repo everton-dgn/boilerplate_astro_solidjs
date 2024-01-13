@@ -1,5 +1,6 @@
-import type { ButtonHTMLAttributes } from 'react'
+import type { JSX } from 'solid-js'
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps
+  extends JSX.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string
 }
