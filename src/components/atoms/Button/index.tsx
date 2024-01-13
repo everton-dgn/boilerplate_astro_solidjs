@@ -1,5 +1,3 @@
-'use client'
-
 import S from './styles.module.scss'
 
 import type { ButtonProps } from './types'
