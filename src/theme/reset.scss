@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: T.$font-family;
   line-height: calc(1em + 0.5rem);
   text-decoration: none;
   -webkit-font-smoothing: antialiased !important;
@@ -67,6 +68,7 @@ select,
 textarea,
 button {
   margin: 0;
+  font-family: T.$font-family;
   font-size: T.$font-size-16;
   font-weight: T.$font-weight-400;
 }
