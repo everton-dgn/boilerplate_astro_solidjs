@@ -63,7 +63,7 @@
       {
         "newlinesBetween": "always",
         "groups": [
-          ["/^solid$/"],
+          ["/solid-js/"],
           "module",
           "/^(providers|components)/",
           ["/hooks/", "/helperFunctions/", "/testHelpers/"],
