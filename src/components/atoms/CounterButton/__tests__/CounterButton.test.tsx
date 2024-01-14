@@ -1,6 +1,5 @@
 import { render, screen } from '@solidjs/testing-library'
-
-import { event } from 'testHelpers/helpFunctions'
+import { event } from 'tests/helpFunctions'
 
 import { CounterButton } from '..'
 

@@ -92,6 +92,7 @@
     "stylelint-selector-no-empty": "^1.0.9",
     "typescript": "^5.3.3",
     "vite-plugin-solid": "^2.8.0",
+    "eslint-plugin-playwright": "^0.21.0",
     "vitest": "^1.1.3"
   }
 }

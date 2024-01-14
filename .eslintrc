@@ -6,6 +6,9 @@
     "astro/astro": true
   },
   "settings": {
+    "playwright": {
+      "additionalAssertFunctionNames": ["assertCustomCondition"]
+    },
     "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx"]
@@ -55,7 +58,8 @@
     "plugin:jest/style",
     "plugin:astro/recommended",
     "plugin:solid/recommended",
-    "plugin:solid/typescript"
+    "plugin:solid/typescript",
+    "plugin:playwright/recommended"
   ],
   "rules": {
     "import-helpers/order-imports": [

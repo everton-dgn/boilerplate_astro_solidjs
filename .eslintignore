@@ -8,3 +8,5 @@ vitest.config.ts
 stylelint.config.js
 vitest.setup.ts
 vite.config.ts
+playwright.config.ts
+playwright-report
