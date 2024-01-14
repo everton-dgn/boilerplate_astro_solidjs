@@ -1,8 +1,7 @@
 ---
-import '@fontsource/poppins/400.css'
-import '@fontsource/poppins/500.css'
-import '@fontsource/poppins/600.css'
 import 'theme/reset.scss'
+import { AstroFont } from 'astro-font'
+
 import { MainProvider } from 'providers/mainProvider'
 
 interface Props {
@@ -30,6 +29,20 @@ const { title, description } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <AstroFont
+      config={[
+        {
+          src: [],
+          preload: true,
+          selector: '*',
+          name: 'Poppins',
+          display: 'swap',
+          fallback: 'sans-serif',
+          googleFontsURL:
+            'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'
+        }
+      ]}
+    />
   </head>
   <body>
     <MainProvider>
