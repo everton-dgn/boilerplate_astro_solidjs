@@ -41,6 +41,7 @@
     "@fontsource/poppins": "^5.0.8",
     "astro": "^4.1.2",
     "clsx": "^2.1.0",
+    "dotenv": "^16.3.1",
     "solid-js": "^1.8.11"
   },
   "devDependencies": {
@@ -69,6 +70,7 @@
     "eslint-plugin-jest-dom": "^5.1.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-n": "16.6.2",
+    "eslint-plugin-playwright": "^0.21.0",
     "eslint-plugin-prettier": "^5.1.2",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-solid": "^0.13.1",
@@ -92,7 +94,6 @@
     "stylelint-selector-no-empty": "^1.0.9",
     "typescript": "^5.3.3",
     "vite-plugin-solid": "^2.8.0",
-    "eslint-plugin-playwright": "^0.21.0",
     "vitest": "^1.1.3"
   }
 }

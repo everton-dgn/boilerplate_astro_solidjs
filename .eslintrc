@@ -112,13 +112,19 @@
   },
   "overrides": [
     {
-      "files": ["**/__tests__/?(*.)+(spec|test).tsx?"],
+      "files": ["src/**/*.test.{ts,tsx}"],
       "plugins": ["jest-dom", "testing-library", "jest"],
       "extends": [
         "plugin:jest-dom/recommended",
-        "plugin:jest/recommended",
         "plugin:jest/style"
-      ]
+      ],
+      "excludedFiles": ["**/*.spec.ts"]
+    },
+    {
+      "files": ["src/**/*.spec.{ts,tsx}"],
+      "rules": {
+        "jest-dom/prefer-in-document": "off"
+      }
     },
     {
       "files": ["*.astro"],
