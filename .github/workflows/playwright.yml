@@ -23,7 +23,8 @@ jobs:
       run: yarn playwright install --with-deps
 
     - name: Start Server
-      run: yarn dev
+      run: yarn dev &
+      shell: bash
 
     - name: Run Playwright tests
       run: yarn playwright test
