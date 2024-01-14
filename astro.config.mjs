@@ -10,5 +10,5 @@ export default defineConfig({
   },
   integrations: [solid()],
   output: 'server',
-  adapter: vercel()
+  adapter: vercel({ solid: true })
 })
