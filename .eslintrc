@@ -34,11 +34,11 @@
     "@typescript-eslint",
     "sonarjs",
     "promise",
-    "prettier",
     "testing-library",
     "jest-dom",
     "jest",
     "jsx-a11y",
+    "prettier",
     "import",
     "eslint-plugin-import-helpers"
   ],
@@ -48,18 +48,18 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:promise/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:import/errors",
-    "plugin:import/typescript",
-    "plugin:import/warnings",
     "plugin:sonarjs/recommended",
-    "prettier",
-    "plugin:prettier/recommended",
     "plugin:jest-dom/recommended",
     "plugin:jest/style",
     "plugin:astro/recommended",
     "plugin:solid/recommended",
     "plugin:solid/typescript",
-    "plugin:playwright/recommended"
+    "plugin:playwright/recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/typescript",
+    "plugin:import/warnings"
   ],
   "rules": {
     "import-helpers/order-imports": [
