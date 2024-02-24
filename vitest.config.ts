@@ -12,7 +12,7 @@ export default getViteConfig({
     passWithNoTests: true,
     setupFiles: ['./vitest.setup.ts'],
     testTransformMode: { web: ["/\.tsx?$/"] },
-    include: ['src/**/*.test.{ts,tsx}'],
+    include: ['src/**/__tests__/*.test.{ts,tsx}'],
     exclude: ['**/node_modules/**', '**/playwright/**'],
     deps: {
       optimizer: {

@@ -1,5 +1,6 @@
-import { render, screen } from '@solidjs/testing-library'
+import { screen } from '@solidjs/testing-library'
 import { event } from 'tests/helpFunctions'
+import { renderWithProviders } from 'tests/providers'
 
 import { CounterButton } from '..'
 
@@ -13,7 +14,7 @@ vi.mock('hooks', () => ({
 
 describe('[Component] Button', () => {
   it('should call a function once on click on the button', async () => {
-    render(() => <CounterButton />)
+    renderWithProviders(<CounterButton />)
 
     const btn = screen.getByRole('button', { name: /count:/i })
     await event().click(btn)

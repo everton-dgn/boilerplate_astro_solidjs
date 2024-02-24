@@ -30,13 +30,9 @@
   },
   "plugins": [
     "solid",
-    "astro",
     "@typescript-eslint",
     "sonarjs",
     "promise",
-    "testing-library",
-    "jest-dom",
-    "jest",
     "jsx-a11y",
     "prettier",
     "import",
@@ -49,12 +45,8 @@
     "plugin:promise/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:sonarjs/recommended",
-    "plugin:jest-dom/recommended",
-    "plugin:jest/style",
-    "plugin:astro/recommended",
     "plugin:solid/recommended",
     "plugin:solid/typescript",
-    "plugin:playwright/recommended",
     "prettier",
     "plugin:prettier/recommended",
     "plugin:import/errors",
@@ -112,23 +104,30 @@
   },
   "overrides": [
     {
-      "files": ["src/**/*.test.{ts,tsx}"],
+      "files": ["src/**/__tests__/*.test.{ts,tsx}"],
       "plugins": ["jest-dom", "testing-library", "jest"],
       "extends": [
         "plugin:jest-dom/recommended",
         "plugin:jest/style"
       ],
-      "excludedFiles": ["**/*.spec.ts"]
+      "excludedFiles": ["**/*.spec.ts"],
+      "rules": {
+        "jest/no-disabled-tests": "off",
+        "testing-library/render-result-naming-convention": "off",
+        "jest/no-commented-out-tests": "off"
+      }
     },
     {
-      "files": ["src/**/*.spec.{ts,tsx}"],
+      "files": ["src/tests/*.spec.ts"],
+      "extends": ["plugin:playwright/recommended"],
       "rules": {
-        "jest-dom/prefer-in-document": "off"
+        "playwright/no-skipped-test": "off"
       }
     },
     {
       "files": ["*.astro"],
       "plugins": ["astro"],
+      "extends": ["plugin:astro/recommended"],
       "processor": "astro/client-side-ts",
       "parser": "astro-eslint-parser",
       "parserOptions": {

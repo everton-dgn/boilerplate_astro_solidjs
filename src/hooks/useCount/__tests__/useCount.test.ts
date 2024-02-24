@@ -1,10 +1,10 @@
 import { useCount } from '..'
 
-import { renderHook } from '@solidjs/testing-library'
+import { renderHooksProvider } from 'tests/providers'
 
 describe('[Hook] useCount', () => {
   it('should increment when call count', async () => {
-    const { result } = renderHook(() => useCount())
+    const { result } = renderHooksProvider(() => useCount())
 
     expect(result.count()).toBe(0)
 

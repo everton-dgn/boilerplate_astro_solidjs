@@ -9,6 +9,6 @@ export default defineConfig({
     }
   },
   integrations: [solid()],
-  output: 'server',
+  output: 'hybrid',
   adapter: vercel({ solid: true })
 })
