@@ -1,8 +1,0 @@
-{
-  "src/**/*.{ts,tsx,astro}": [
-    "yarn format",
-    "yarn lint:fix",
-    "yarn test:ci related"
-  ],
-  "src/**/*.scss": ["yarn lint:css:fix"]
-}
