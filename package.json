@@ -33,7 +33,7 @@
   "dependencies": {
     "@astrojs/solid-js": "4.4.1",
     "@fontsource/poppins": "5.0.15",
-    "astro": "4.15.1",
+    "astro": "4.15.2",
     "clsx": "2.1.1",
     "solid-js": "1.8.22"
   },
