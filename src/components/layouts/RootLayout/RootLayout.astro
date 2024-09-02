@@ -1,20 +1,17 @@
 ---
+import { ViewTransitions } from 'astro:transitions'
+
+import { MainProvider } from 'components/providers/MainProvider'
+
 import '@fontsource/poppins/400.css'
 import '@fontsource/poppins/500.css'
 import '@fontsource/poppins/600.css'
 import 'theme/reset.scss'
-import { MainProvider } from 'providers/mainProvider'
-
-interface Props {
-  title: string
-  description: string
-}
 
 const { title, description } = Astro.props
 ---
 
-<!doctype html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -22,14 +19,16 @@ const { title, description } = Astro.props
       name="viewport"
     />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta content="boilerplate, astro.js, solidjs, solid" name="keywords" />
-    <meta content="© Éverton Toffanetto" name="copyright" />
+    <meta content="boilerplate, astro.js, solidjs" name="keywords" />
+    <meta content="© Boilerplate" name="copyright" />
     <meta content="#fff" name="theme-color" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <link href="/favicon.ico" rel="icon" type="image/ico" />
     <link href="/favicon.ico" rel="apple-touch-icon" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <ViewTransitions fallback="animate" />
   </head>
   <body>
     <MainProvider>

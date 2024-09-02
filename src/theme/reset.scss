@@ -34,6 +34,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  width: 100%;
   min-height: 100vh;
   justify-content: flex-start;
   background-image: linear-gradient(
@@ -75,7 +76,6 @@ button {
 
 button {
   border: 0;
-  border-radius: T.$border-radius-4;
   cursor: pointer;
 }
 

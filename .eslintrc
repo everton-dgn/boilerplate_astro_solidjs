@@ -1,9 +1,9 @@
 {
   "env": {
+    "astro/astro": true,
     "browser": true,
     "es2022": true,
-    "node": true,
-    "astro/astro": true
+    "node": true
   },
   "settings": {
     "playwright": {
@@ -25,33 +25,29 @@
       "jsx": true
     },
     "ecmaVersion": "latest",
-    "sourceType": "module",
-    "extraFileExtensions": [".astro"]
+    "sourceType": "module"
   },
   "plugins": [
-    "solid",
     "@typescript-eslint",
     "sonarjs",
     "promise",
-    "jsx-a11y",
     "prettier",
+    "jsx-a11y",
     "import",
     "eslint-plugin-import-helpers"
   ],
   "extends": [
-    "standard-with-typescript",
+    "love",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:promise/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:sonarjs/recommended",
-    "plugin:solid/recommended",
-    "plugin:solid/typescript",
-    "prettier",
-    "plugin:prettier/recommended",
     "plugin:import/errors",
     "plugin:import/typescript",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "plugin:sonarjs/recommended-legacy",
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "import-helpers/order-imports": [
@@ -59,21 +55,29 @@
       {
         "newlinesBetween": "always",
         "groups": [
-          ["/solid-js/"],
-          "module",
-          "/^(providers|components)/",
-          ["/hooks/", "/helperFunctions/", "/testHelpers/"],
-          ["/infra/", "/data/", "/validation/"],
-          "/^assets/",
-          ["/^theme$/", "/styles/", "/@types/"],
+          ["/^astro/", "/^solid-js/"],
+          ["module"],
+          "/^@/libs/",
+          "/^@/(providers|components)/",
+          ["/^@/(hooks|utils|tests)/"],
+          ["/^@/(infra|data|validation|content)/"],
+          "/^@/images/",
+          ["/^@/i18n/", "/^@/theme$/", "/^@/styles/"],
           ["parent", "sibling", "index"]
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }
       }
     ],
+    "@typescript-eslint/array-type": "off",
+    "sonarjs/no-duplicate-string": "off",
+    "no-undef": "off",
+    "@typescript-eslint/no-misused-promises":  "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
     "@typescript-eslint/unbound-method": "off",
-    "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
+    "import/no-unresolved": [
+      "error",
+      { "commonjs": true, "amd": true, "ignore": ["^astro:"] }
+    ],
     "import/named": 2,
     "import/namespace": 2,
     "import/default": 2,
@@ -83,12 +87,6 @@
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
-    "@typescript-eslint/no-floating-promises": [
-      "error",
-      {
-        "ignoreVoid": false
-      }
-    ],
     "object-shorthand": "warn",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/ban-ts-comment": "off",
@@ -103,6 +101,14 @@
     "prettier/prettier": "error"
   },
   "overrides": [
+    {
+      "files": ["src/**/*.{ts,tsx}"],
+      "plugins": ["solid"],
+      "extends": ["plugin:solid/recommended", "plugin:solid/typescript"],
+      "rules": {
+        "solid/reactivity": "off"
+      }
+    },
     {
       "files": ["src/**/__tests__/*.test.{ts,tsx}"],
       "plugins": ["jest-dom", "testing-library", "jest"],
@@ -125,6 +131,9 @@
       }
     },
     {
+      "env": {
+        "astro/astro": true
+      },
       "files": ["*.astro"],
       "plugins": ["astro"],
       "extends": ["plugin:astro/recommended"],
@@ -132,8 +141,8 @@
       "parser": "astro-eslint-parser",
       "parserOptions": {
         "parser": "@typescript-eslint/parser",
-        "extraFileExtensions": [".astro"],
-        "sourceType": "module"
+        "sourceType": "module",
+        "extraFileExtensions": [".astro"]
       },
       "rules": {
         "astro/no-conflict-set-directives": "error",

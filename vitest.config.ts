@@ -1,19 +1,9 @@
-import { getViteConfig } from 'astro/config';
-import solid from 'vite-plugin-solid'
+// @ts-nocheck
+/// <reference types="vitest" />
+import { getViteConfig } from 'astro/config'
 
-export default getViteConfig({
-  plugins: [solid()],
+const config = getViteConfig({
   test: {
-    coverage: {
-      provider: 'v8'
-    },
-    environment: 'jsdom',
-    globals: true,
-    passWithNoTests: true,
-    setupFiles: ['./vitest.setup.ts'],
-    testTransformMode: { web: ["/\.tsx?$/"] },
-    include: ['src/**/__tests__/*.test.{ts,tsx}'],
-    exclude: ['**/node_modules/**', '**/playwright/**'],
     deps: {
       optimizer: {
         web: {
@@ -21,8 +11,28 @@ export default getViteConfig({
         }
       }
     },
+    coverage: {
+      provider: 'v8',
+      include: ['src/**/*.{ts,tsx}'],
+      exclude: ['src/assets/', 'src/tests/']
+    },
+    environment: 'jsdom',
+    globals: true,
+    passWithNoTests: true,
+    setupFiles: ['./vitest.setup.ts'],
+    testTransformMode: { web: ['/.tsx?$/'] },
+    include: ['src/**/__tests__/*.test.{ts,tsx}'],
+    exclude: ['**/node_modules/**', '**/playwright/**'],
+    pool: 'forks',
+    poolOptions: {
+      forks: {
+        isolate: false
+      }
+    }
   },
   resolve: {
-    conditions: ['development', 'browser'],
+    conditions: ['development', 'browser']
   }
 })
+
+export default config

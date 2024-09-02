@@ -2,3 +2,6 @@ public/*
 yarn.lock
 .gitignore
 .eslintcache
+node_modules
+.vercel
+tsconfig.tsbuildinfo

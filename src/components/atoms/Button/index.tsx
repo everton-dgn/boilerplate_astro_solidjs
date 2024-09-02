@@ -1,5 +1,4 @@
 import S from './styles.module.scss'
-
 import type { ButtonProps } from './types'
 
 export const Button = (props: ButtonProps) => (

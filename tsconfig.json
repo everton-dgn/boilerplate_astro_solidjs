@@ -2,11 +2,12 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "baseUrl": "src",
-    "target": "es2022",
+    "target": "ESNext",
     "allowJs": true,
     "esModuleInterop": true,
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "plugins": [{ "name": "@astrojs/ts-plugin" }],
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -30,13 +31,14 @@
     "declaration": true,
     "skipLibCheck": true,
     "incremental": true,
-    "types": ["vite/client", "vitest/globals"]
+    "types": ["vite/client", "vitest/globals", "astro/client"]
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.astro",
-    "./vitest.setup.ts"
+    "./vitest.setup.ts",
+    "src/@types/**/*.d.ts"
   ],
-  "exclude": ["node_modules", "src/**/*.js"]
+  "exclude": ["node_modules"]
 }

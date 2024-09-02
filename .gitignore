@@ -42,5 +42,4 @@ tsconfig.tsbuildinfo
 .stylelintcache
 .husky
 /test-results/
-/blob-report/
 /playwright/.cache/
