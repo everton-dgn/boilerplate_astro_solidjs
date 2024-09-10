@@ -9,7 +9,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "plugins": [{ "name": "@astrojs/ts-plugin" }],
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
