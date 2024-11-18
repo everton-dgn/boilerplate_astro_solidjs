@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config'
-import vercel from '@astrojs/vercel/serverless'
 import solid from '@astrojs/solid-js'
 
 export default defineConfig({
@@ -17,10 +16,5 @@ export default defineConfig({
     }
   },
   integrations: [solid()],
-  output: 'hybrid',
-  adapter: vercel({
-    imageService: true,
-    isr: true,
-    edgeMiddleware: true
-  })
+  output: 'static'
 })
