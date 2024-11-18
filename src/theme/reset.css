@@ -1,12 +1,13 @@
-@use 'src/theme' as T;
+@import 'index.css';
 
+/*noinspection ALL*/
 * {
   box-sizing: border-box;
   outline: none;
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: T.$font-family;
+  font-family: var(--font-family);
   line-height: calc(1em + 0.5rem);
   text-decoration: none;
   -webkit-font-smoothing: antialiased !important;
@@ -39,11 +40,11 @@ body {
   justify-content: flex-start;
   background-image: linear-gradient(
     45deg,
-    T.$color-black,
-    T.$color-secondary,
-    T.$color-primary
+    var(--color-black),
+    var(--color-secondary),
+    var(--color-primary)
   );
-  color: T.$color-white;
+  color: var(--color-white);
   isolation: isolate;
 }
 
@@ -69,9 +70,9 @@ select,
 textarea,
 button {
   margin: 0;
-  font-family: T.$font-family;
-  font-size: T.$font-size-16;
-  font-weight: T.$font-weight-400;
+  font-family: var(--font-family);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-400);
 }
 
 button {
@@ -86,12 +87,12 @@ a:active {
 }
 
 :focus {
-  outline: 4px solid T.$color-focus;
+  outline: 4px solid var(--color-focus);
   outline-offset: 1px;
 }
 
 :focus-visible {
-  outline: 4px solid T.$color-focus;
+  outline: 4px solid var(--color-focus);
   outline-offset: 1px;
 }
 
@@ -121,16 +122,16 @@ mark {
 ::-webkit-scrollbar,
 scrollbar-width {
   width: 16px !important;
-  background-color: T.$color-white;
+  background-color: var(--color-white);
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 3px solid T.$color-white;
+  border: 3px solid var(--color-white);
   border-radius: 20px;
-  background-color: T.$color-gray;
+  background-color: var(--color-gray);
 }
 
 :root {
-  scrollbar-color: T.$color-gray T.$color-white !important;
+  scrollbar-color: var(--color-gray) var(--color-white) !important;
   scrollbar-width: 16px !important;
 }
