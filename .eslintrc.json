@@ -29,7 +29,6 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "sonarjs",
     "promise",
     "prettier",
     "jsx-a11y",
@@ -45,7 +44,6 @@
     "plugin:import/errors",
     "plugin:import/typescript",
     "plugin:import/warnings",
-    "plugin:sonarjs/recommended-legacy",
     "prettier",
     "plugin:prettier/recommended"
   ],
@@ -69,7 +67,6 @@
       }
     ],
     "@typescript-eslint/array-type": "off",
-    "sonarjs/no-duplicate-string": "off",
     "no-undef": "off",
     "@typescript-eslint/no-misused-promises":  "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
