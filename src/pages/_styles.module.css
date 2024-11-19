@@ -40,7 +40,6 @@
 
   @media (min-width: 600px) {
     & img {
-      display: none !important;
       width: 155px !important;
       min-width: 155px !important;
       height: 155px !important;
