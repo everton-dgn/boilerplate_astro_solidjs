@@ -2,7 +2,7 @@ import { createRoot } from 'solid-js'
 
 import { screen } from '@solidjs/testing-library'
 import { event } from 'tests/utils'
-import { renderWithProviders } from 'tests/providers'
+import { renderWithProviders } from 'tests/providers/component'
 
 import { Button } from '..'
 

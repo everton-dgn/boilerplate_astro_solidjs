@@ -20,7 +20,7 @@ const config = getViteConfig({
     globals: true,
     passWithNoTests: true,
     setupFiles: ['./vitest.setup.ts'],
-    testTransformMode: { web: ['/.tsx?$/'] },
+    testTransformMode: { web: ['\\.tsx?$'] },
     include: ['src/**/__tests__/*.test.{ts,tsx}'],
     exclude: ['**/node_modules/**', '**/playwright/**'],
     pool: 'forks',

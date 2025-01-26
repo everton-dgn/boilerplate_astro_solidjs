@@ -1,6 +1,6 @@
 import { useCount } from '..'
 
-import { renderHooksProvider } from 'tests/providers'
+import { renderHooksProvider } from 'tests/providers/hook'
 
 describe('[Hook] useCount', () => {
   it('should increment when call count', async () => {
