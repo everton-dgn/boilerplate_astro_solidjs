@@ -31,7 +31,7 @@
     "declaration": true,
     "skipLibCheck": true,
     "incremental": true,
-    "types": ["vite/client", "vitest/globals", "astro/client"]
+    "types": ["vite/client", "vitest/globals", "astro/client", "@testing-library/jest-dom"]
   },
   "include": [
     "src/**/*.ts",
