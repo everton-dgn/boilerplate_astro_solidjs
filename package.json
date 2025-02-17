@@ -30,6 +30,13 @@
     "postinstall": "npx lefthook install"
   },
   "type": "module",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "lefthook",
+      "sharp"
+    ]
+  },
   "dependencies": {
     "@astrojs/solid-js": "5.0.4",
     "@fontsource/poppins": "5.1.1",
