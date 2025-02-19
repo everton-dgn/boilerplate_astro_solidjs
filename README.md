@@ -83,7 +83,7 @@ In addition to being constantly updated, this project was configured in the smal
 
 - node (latest version lts).
 
-- yarn (latest version lts).
+- pnpm (latest version lts).
 
 <br />
 
@@ -100,13 +100,13 @@ git clone https://github.com/everton-dgn/boilerplate_astro_solidjs.git
 ## Install Dependencies
 
 ```bash
-yarn
+pnpm i
 ```
 
 ## Start Development Environment
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 Available in http://localhost:3000
@@ -114,13 +114,13 @@ Available in http://localhost:3000
 ## Generate Production Build
 
 ```bash
-yarn build
+pnpm build
 ```
 
 ## Start Production Environment
 
 ```bash
-yarn preview
+pnpm preview
 ```
 
 Available in http://localhost:3000
@@ -128,13 +128,13 @@ Available in http://localhost:3000
 ## Run Tests
 
 ```bash
-yarn test
+pnpm test
 ```
 
 ## Run Tests in Watch Mode
 
 ```bash
-yarn test:w
+pnpm test:w
 ```
 
 Available in http://localhost:6006
@@ -142,27 +142,27 @@ Available in http://localhost:6006
 ## Run Lints
 
 ```bash
-yarn lint
+pnpm lint
 ```
 
 ```bash
-yarn typecheck
+pnpm typecheck
 ```
 
 ```bash
-yarn check:format
+pnpm check:format
 ```
 
 ## Format code with prettier
 
 ```bash
-yarn format
+pnpm format
 ```
 
 ## Check for Available Updates for Dependencies
 
 ```bash
-yarn check:update
+pnpm check:update
 ```
 
 <br />
