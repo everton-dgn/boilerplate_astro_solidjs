@@ -1,5 +1,5 @@
 public/*
-yarn.lock
+pnpm-lock.yaml
 .gitignore
 .prettierignore
 .tsBuildInfoFile
