@@ -26,9 +26,9 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:codegen": "playwright codegen http://localhost:4321",
-    "check:update": "yarn upgrade-interactive --latest",
+    "check:update": "pnpm update --interactive --latest",
     "detect:duplicates": "pnpx jscpd ./src/**/*.ts",
-    "postinstall": "npx lefthook install"
+    "postinstall": "pnpx lefthook install"
   },
   "type": "module",
   "pnpm": {
