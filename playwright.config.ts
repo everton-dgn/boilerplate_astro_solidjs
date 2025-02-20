@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test'
 import dotenv from 'dotenv'
 
 dotenv.config({ path: '.env.test' })
@@ -41,8 +41,8 @@ export default defineConfig({
     // },
     {
       name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    },
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' }
+    }
     // {
     //   name: 'Mobile Chrome',
     //   use: { ...devices['Pixel 7'] },
@@ -57,8 +57,8 @@ export default defineConfig({
     // }
   ],
   webServer: {
-    command: 'yarn dev',
+    command: 'pnpm dev',
     url: process.env.BASE_URL_TEST,
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: !process.env.CI
   }
-});
+})
