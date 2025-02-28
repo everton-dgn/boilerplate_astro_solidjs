@@ -32,6 +32,9 @@
     "postinstall": "pnpx lefthook install"
   },
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
