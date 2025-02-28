@@ -38,14 +38,14 @@ jobs:
 
       #  typecheck:
       - name: Generate Astro Types
-        run: yarn sync
+        run: pnpm sync
 
       - name: Run Typescript Check
         run: pnpm typecheck
 
       #  lint:
       - name: Run Lint
-        run: yarn lint
+        run: pnpm lint
 
       #  test_ci:
       - name: Run Tests
