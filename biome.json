@@ -262,7 +262,7 @@
       }
     },
     {
-      "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
+      "include": ["*.ts", "*.tsx", "*.mts", "*.cts", "*.astro"],
       "linter": {
         "enabled": true,
         "rules": {
