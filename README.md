@@ -6,7 +6,7 @@
 
 </div>
 
-<h1 align="center">Boilerplate Complete and updated with Astro.js, Solid.js, Typescript, SASS, Tests and more</h1>
+<h1 align="center">Boilerplate Complete and updated with Astro.js, Solid.js, Typescript, CSS Modules, Tests and more</h1>
 
 <br />
 
@@ -55,7 +55,7 @@ In addition to being constantly updated, this project was configured in the smal
 
 🔥 TypeScript
 
-💅 SASS
+💅 CSS Modules
 
 🚩 Lints: Lefthook, BiomeJS and Commitlint
 
