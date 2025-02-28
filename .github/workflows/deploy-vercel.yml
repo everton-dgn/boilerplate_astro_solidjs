@@ -45,7 +45,7 @@ jobs:
 
       #  lint:
       - name: Run Lint
-        run: pnpm lint
+        run: pnpm biome:ci
 
       #  test_ci:
       - name: Run Tests

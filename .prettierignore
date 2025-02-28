@@ -1,7 +1,0 @@
-public/*
-pnpm-lock.yaml
-.gitignore
-.eslintcache
-node_modules
-.vercel
-tsconfig.tsbuildinfo

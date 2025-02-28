@@ -1,13 +1,13 @@
 import { createRoot } from 'solid-js'
 
 import { screen } from '@solidjs/testing-library'
-import { event } from 'tests/utils'
 import { renderWithProviders } from 'tests/providers/component'
+import { event } from 'tests/utils'
 
 import { CounterButton } from '..'
 
 const mockIncrement = vi.fn()
-vi.mock('hooks', () => ({
+vi.mock('hooks/useCount', () => ({
   useCount: () => ({
     count: () => 0,
     increment: mockIncrement
