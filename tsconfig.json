@@ -8,7 +8,7 @@
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
     "plugins": [{ "name": "@astrojs/ts-plugin" }],
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "strict": true,
