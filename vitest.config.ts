@@ -1,5 +1,3 @@
-// @ts-nocheck
-/// <reference types="vitest" />
 import { getViteConfig } from 'astro/config'
 
 const config = getViteConfig({

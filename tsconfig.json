@@ -39,7 +39,7 @@
     "src/**/*.astro",
     "./vitest.setup.ts",
     "src/@types/**/*.d.ts",
-    ".astro/types.d.ts",
+    ".astro/types.d.ts"
   ],
   "exclude": ["node_modules"]
 }
