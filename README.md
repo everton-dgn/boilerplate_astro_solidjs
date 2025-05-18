@@ -176,7 +176,7 @@ For verbose output:
 pnpm dev:verbose
 ```
 
-Available at http://localhost:3000
+Available at http://localhost:4321
 
 ## Generate Production Build
 
@@ -190,7 +190,7 @@ pnpm build
 pnpm preview
 ```
 
-Available at http://localhost:3000
+Available at http://localhost:4321
 
 ## Run Tests
 
