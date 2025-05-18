@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/boilerplate_astro_solidjs?style=plastic)</a>
+![GitHub License](https://img.shields.io/github/license/everton-dgn/boilerplate_astro_solidjs?style=plastic)
 ![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/boilerplate_astro_solidjs?style=plastic)
 ![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/boilerplate_astro_solidjs?color=yellow&style=plastic)
 
@@ -14,9 +14,9 @@
 
 This application is a boilerplate for complex and large systems, especially those that need to scale with security and code quality.
 
-We sought to achieve 3 pillars: readability, reusability, and refactorability.
+We sought to achieve three pillars: readability, reusability, and refactorability.
 
-In the construction of the UI, the Atomic Design structure was chosen, organizing the global components into atoms, molecules, organisms and templates.
+In the construction of the UI, the Atomic Design structure was chosen, organizing the global components into atoms, molecules, organisms, and templates.
 
 In addition to being constantly updated, this project was configured in the smallest details to serve as a basis for professional projects that require standardized and easy-to-maintain code architecture and design.
 
@@ -150,8 +150,6 @@ pnpm test
 pnpm test:w
 ```
 
-Available in http://localhost:6006
-
 ## Run Lints
 
 ```bash
@@ -166,7 +164,7 @@ pnpm typecheck
 pnpm check:format
 ```
 
-## Format code with prettier
+## Format code with BiomeJS
 
 ```bash
 pnpm format
