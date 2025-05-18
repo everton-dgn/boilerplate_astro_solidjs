@@ -1,7 +1,7 @@
 import type { JSX } from 'solid-js'
 
 import { renderHook } from '@solidjs/testing-library'
-import { MainProvider } from 'components/providers/MainProvider'
+import { MainProvider } from 'components/atoms/MainProvider'
 
 import type { RenderHooksProviderProps, WrapperProps } from './types'
 
