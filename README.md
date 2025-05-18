@@ -2,7 +2,6 @@
 
 ![GitHub License](https://img.shields.io/github/license/everton-dgn/boilerplate_astro_solidjs?style=plastic)
 ![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/boilerplate_astro_solidjs?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/boilerplate_astro_solidjs?color=yellow&style=plastic)
 ![Node Version](https://img.shields.io/badge/node-%3E%3D22-brightgreen?style=plastic)
 ![Built With](https://img.shields.io/badge/built%20with-Astro%20%2B%20SolidJS-blue?style=plastic)
 
