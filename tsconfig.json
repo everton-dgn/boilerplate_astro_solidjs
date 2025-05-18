@@ -31,7 +31,12 @@
     "declaration": true,
     "skipLibCheck": true,
     "incremental": true,
-    "types": ["vitest/globals", "astro/client", "@testing-library/jest-dom"]
+    "types": [
+      "vitest/globals",
+      "astro/client",
+      "@testing-library/jest-dom",
+      "unplugin-icons/types/solid"
+    ]
   },
   "include": [
     "src/**/*.ts",
@@ -41,5 +46,5 @@
     "src/@types/**/*.d.ts",
     ".astro/types.d.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

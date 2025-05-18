@@ -6,7 +6,7 @@
 
 </div>
 
-<h1 align="center">Boilerplate Complete and updated with Astro.js, Solid.js, Typescript, CSS Modules, Tests and more</h1>
+<h1 align="center">Boilerplate Complete and updated with Astro.js, Solid.js, Typescript, CSS Modules, Tests, and more</h1>
 
 <br />
 
@@ -40,7 +40,6 @@ In addition to being constantly updated, this project was configured in the smal
   - [Run Lints](#run-lints)
   - [Format code with prettier](#format-code-with-prettier)
   - [Check for Available Updates for Dependencies](#check-for-available-updates-for-dependencies)
-- [Important Considerations](#rotating_light-important-considerations)
 - [Author](#technologist-author)
 
 <br />
@@ -51,7 +50,7 @@ In addition to being constantly updated, this project was configured in the smal
 
 🚀 Astro.js
 
-⚛ Solidjs
+⚛ Solid.js
 
 🔥 TypeScript
 
@@ -67,13 +66,27 @@ In addition to being constantly updated, this project was configured in the smal
 
 # :triangular_flag_on_post: Features
 
-- [x] Responsive design;
+- [x] Responsive design
 
-- [x] Atomic Design;
+- [x] Atomic Design
 
-- [x] 100% coverage;
+- [x] Detection of prefers-reduced-motion
 
-- [x] Detection prefers-reduced-motion;
+- [x] Theme configuration with CSS Modules
+
+- [x] Global aliases for importing utilities like `clsx` without manual imports
+
+- [x] Customizable icon system supporting your own SVGs and any icon from [Iconify](https://icon-sets.iconify.design/)
+
+- [x] Instant lint and formatter with BiomeJS
+
+- [x] Lefthook runs lint only on changed files
+
+- [x] Ultra-optimized font setup, each font only 2kb with preload, fully framework-agnostic
+
+- [x] Automatic release generation and versioning
+
+- [x] CI/CD workflow pre-configured
 
 <br />
 
@@ -166,14 +179,6 @@ pnpm check:update
 ```
 
 <br />
-
----
-
-# :rotating_light: Important Considerations
-
-- The husky is configured to not allow commit if there are any lint and typescript errors. The push can only be done if all tests and builds pass.
-
-- Due to husky's build check settings, to push with git, the development server must be stopped first or an error will occur in the `git push` command.
 
 ---
 

@@ -47,12 +47,6 @@
         "useValidAriaValues": "error"
       },
       "complexity": {
-        "noExcessiveCognitiveComplexity": {
-          "level": "error",
-          "options": {
-            "maxAllowedComplexity": 10
-          }
-        },
         "useFlatMap": "error",
         "noUselessUndefinedInitialization": "error",
         "noUselessLabel": "error",
@@ -284,7 +278,7 @@
           "style": {
             "noArguments": "error",
             "noVar": "error",
-            "useConst": "error"
+            "useConst": "off"
           },
           "suspicious": {
             "noDuplicateClassMembers": "off",
