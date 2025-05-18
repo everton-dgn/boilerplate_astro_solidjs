@@ -38,7 +38,7 @@ In addition to being constantly updated, this project was configured in the smal
   - [Run Tests](#run-tests)
   - [Run Tests in Watch Mode](#run-tests-in-watch-mode)
   - [Run Lints](#run-lints)
-  - [Format code with prettier](#format-code-with-prettier)
+  - [Format code with BiomeJS](#format-code-with-biomejs)
   - [Check for Available Updates for Dependencies](#check-for-available-updates-for-dependencies)
 - [Author](#technologist-author)
 
